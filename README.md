@@ -16,15 +16,15 @@ https://data-flair.training/blogs/collection-framework-in-java/
 
 Uma coleção (_collection_) — às vezes chamada de contêiner (_container_) — é simplesmente um objeto que agrupa vários elementos em uma única unidade. As coleções são usadas para armazenar, recuperar, manipular e comunicar dados agregados. Normalmente, eles representam itens de dados que formam um grupo natural, como uma mão de pôquer (uma coleção de cartas), uma pasta de correio (uma coleção de cartas) ou uma lista telefônica (um mapeamento de nomes para números de telefone).
 
-Interface Collection https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
+`Interface Collection<E>` https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
 
-Classe Collections https://docs.oracle.com/javase/7/docs/api/java/util/Collections.html
+Classe `Collections` https://docs.oracle.com/javase/7/docs/api/java/util/Collections.html
 
 ## Aula 1: Lists - Coleções com iterações ordenadas 
 
 Pacote: **java.util.List** https://docs.oracle.com/javase/8/docs/api/java/util/List.html
 
-`interface List<E>`: uma coleção ordenada (também conhecida como sequência). O usuário desta interface tem controle preciso sobre onde na lista cada elemento é inserido. O usuário pode acessar elementos por seu índice inteiro (posição na lista) e pesquisar elementos na lista. Ao contrário dos conjuntos, as listas normalmente permitem elementos duplicados.
+`Interface List<E>`: uma coleção ordenada (também conhecida como sequência). O usuário desta interface tem controle preciso sobre onde na lista cada elemento é inserido. O usuário pode acessar elementos por seu índice inteiro (posição na lista) e pesquisar elementos na lista. Ao contrário dos conjuntos, as listas normalmente permitem elementos duplicados.
 
 As listas permitem elementos com mesmo conteúdo e garante a ordem de inserção.
 
@@ -42,7 +42,7 @@ Pacote: **java.util.Set**
 
 https://docs.oracle.com/javase/8/docs/api/java/util/Set.html
 
-`interface Set<E>`: uma coleção que não contém elementos duplicados. Mais formalmente, os conjuntos (set) não contêm nenhum par de elementos e1 e e2 tal que `e1.equals(e2)`, e no máximo um elemento nulo (`null`). Como está implícito em seu nome, essa interface modela a abstração de conjuntos matemáticos (set). Os set, geralmente, não possuem index (garantia de ordenamento).
+`Interface Set<E>`: uma coleção que **não contém** elementos duplicados. Mais formalmente, os conjuntos (set) não contêm nenhum par de elementos e1 e e2 tal que `e1.equals(e2)`, e no máximo um elemento nulo (`null`). Como está implícito em seu nome, essa interface modela a abstração de conjuntos matemáticos (set). Os set, geralmente, não possuem index (garantia de ordenamento).
 
 Classe `HashSet` https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html 
 
@@ -56,7 +56,7 @@ Pacote: **java.util.Map**
 
 https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html
 
-`interface Map<K,V>`: um objeto que mapeia Chaves (_Keys_) a Valores (_Values_). Um mapa (_map_) não pode conter chaves duplicadas; cada chave pode mapear a, no máximo, um valor.
+`Interface Map<K,V>`: um objeto que mapeia Chaves (_Keys_) a Valores (_Values_). Um mapa (_map_) não pode conter chaves duplicadas; cada chave pode mapear a, no máximo, um valor.
 
 Classe `HashMap` https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html
 
@@ -74,7 +74,7 @@ https://www.oracle.com/br/technical-resources/articles/java-stream-api.html
 
 https://stackify.com/streams-guide-java-8/
 
-Pacote **java.util.stream** : Classes para dar suporte a operações de estilo funcional em fluxos (_streams_) de elementos, como transformações map-reduce em coleções. https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html
+Pacote **java.util.stream** : Classes para dar suporte a operações de estilo funcional em fluxos (_streams_) de elementos, como filtros (filters) e transformações map-reduce em coleções. https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html
 
 `Interface Stream<T>`: uma sequência de elementos que suportam operações agregadas sequenciais e paralelas. https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html 
 
